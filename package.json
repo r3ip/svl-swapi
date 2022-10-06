@@ -1,0 +1,9 @@
+{
+  "name": "svl-swapi",
+  "version": "1.0.0",
+  "license": "ISC",
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {}
+}
