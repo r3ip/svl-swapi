@@ -68,3 +68,31 @@ functions:
       - httpApi:
           path: /usuario/{id}
           method: delete
+
+  listarPersonas:
+    handler:  src/lambda/swapi/personas/listarPersonas.listarPersonas
+    events:
+      - httpApi:
+          path: /swapi/persona
+          method: get
+
+  obtenerPersona:
+    handler:  src/lambda/swapi/personas/obtenerPersona.obtenerPersona
+    events:
+      - httpApi:
+          path: /swapi/persona/{id}
+          method: get
+
+  listarPlanetas:
+    handler:  src/lambda/swapi/personas/listarPlanetas.listarPlanetas
+    events:
+      - httpApi:
+          path: /swapi/planeta
+          method: get
+
+  obtenerPlaneta:
+    handler:  src/lambda/swapi/personas/obtenerPlaneta.obtenerPlaneta
+    events:
+      - httpApi:
+          path: /swapi/planeta/{id}
+          method: get

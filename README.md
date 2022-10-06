@@ -86,8 +86,10 @@ serverless deploy
 - DELETE: /usuario/{id}
 
 ### Peticiones a SWAPI
-- GET: /swapi
-- GET: /swapi/{id}
+- GET: /swapi/persona
+- GET: /swapi/persona/{id}
+- GET: /swapi/planeta
+- GET: /swapi/planeta/{id}
 
 ## Autor ✒️
 
