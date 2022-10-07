@@ -91,5 +91,5 @@ serverless deploy
 
 ## Autor ✒️
 
-* **Josue Piero Valenzuela** - [Github](https://github.com/r3ip)
+* **Piero Valenzuela** - [Github](https://github.com/r3ip)
 
