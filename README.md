@@ -23,7 +23,7 @@ npm install -g serverless
 
 ### Dependencias de node
 
-Para la instalacion de las dependecias de node en el proyecto ejecutar el siguiente comando.
+Para la instalación de las dependencias de node en el proyecto, ejecutar el siguiente comando.
 
 ```
 npm install o npm i
@@ -36,7 +36,7 @@ Para la instalación del CLI AWS puedes revisar el enlace: https://aws.amazon.co
 ___
 ## Configuración de los permisos de AWS en el computador 🔧
 
-En AWS deberas generar en el sericio IAM un usuario con el cual podras generar un "ID de clave de acceso" y una "Clave de acceso secreta"
+En AWS deberás generar en el servicio IAM un usuario con el cual podrás generar un "ID de clave de acceso" y una "Clave de acceso secreta"
 
 ```
 //ejemplo:
@@ -52,7 +52,7 @@ aws --version
 // ejemplo de respuesta: aws-cli/1.25.87 Python/3.8.10 Windows/10 botocore/1.27.86
 ```
 
-Una ves confirmado que cuantas con el CLI de AWS en tu computador configura tu perfil con los accesos generados. Ejecuta en el terminal el comando
+Una vez confirmado que cuantas con el CLI de AWS en tu computador configura tu perfil con los accesos generados. Ejecuta en el terminal el comando
 
 ```
 aws configure
@@ -69,7 +69,7 @@ Default output format:
 ___
 ## Despliegue 🚀
 
-Para el despliege del proyecto a AWS con serverless framework deberas usar el comando
+Para el despliegue del proyecto a AWS con serverless framework deberás usar el comando
 
 ```
 serverless deploy
@@ -103,4 +103,3 @@ serverless deploy
 ## Autor ✒️
 
 * **Piero Valenzuela** - [Github](https://github.com/r3ip)
-
