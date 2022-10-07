@@ -83,6 +83,17 @@ serverless deploy
 - PUT: /usuario/{id}
 - DELETE: /usuario/{id}
 
+```
+//ejemplo body:
+
+{
+  "nombre": "Nombre usuario",
+  "apellidos": "Apellido usuario"
+}
+
+```
+
+
 ### Peticiones a SWAPI
 - GET: /swapi/persona
 - GET: /swapi/persona/{id}

@@ -21,7 +21,7 @@ const crearUsuario = async (event) => {
     
         return {
             status: 200,
-            body: JSON.stringify(usuario)
+            body: usuario
         }
     } catch (error) {
         console.log(error)
