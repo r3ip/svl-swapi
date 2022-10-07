@@ -75,8 +75,6 @@ Para el despliege del proyecto a AWS con serverless framework deberas usar el co
 serverless deploy
 ```
 
-## Testing 📋
-
 ## Endpoints
 ### Peticiones a Dynamodb
 - GET: /usuario
