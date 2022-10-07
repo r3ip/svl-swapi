@@ -84,14 +84,14 @@ functions:
           method: get
 
   listarPlanetas:
-    handler:  src/lambda/swapi/personas/listarPlanetas.listarPlanetas
+    handler:  src/lambda/swapi/planetas/listarPlanetas.listarPlanetas
     events:
       - httpApi:
           path: /swapi/planeta
           method: get
 
   obtenerPlaneta:
-    handler:  src/lambda/swapi/personas/obtenerPlaneta.obtenerPlaneta
+    handler:  src/lambda/swapi/planetas/obtenerPlaneta.obtenerPlaneta
     events:
       - httpApi:
           path: /swapi/planeta/{id}

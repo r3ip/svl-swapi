@@ -1,11 +1,10 @@
 const axios = require('axios');
-
-const baseURL = 'https://swapi.py4e.com/api'
+require('dotenv').config();
 
 const obtenerPlaneta = async (event) => {
     try {
         const { id } = event.pathParameters;
-        const respuesta = await axios.get(`${baseURL}/planets/${id}`);
+        const respuesta = await axios.get(`${process.env.SWAPI_BASE_URL}/planets/${id}`);
         const { data } = respuesta;
         return data;
     } catch (error) {

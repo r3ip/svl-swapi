@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+require('dotenv').config();
 
 const eliminarUsuario = async (event) => {
     try {
@@ -6,7 +7,7 @@ const eliminarUsuario = async (event) => {
         const { id } = event.pathParameters;
 
         await dynamodb.delete({
-            TableName: 'usersTable',
+            TableName: process.env.TABLENAME,
             Key: { id }
         }).promise();
 

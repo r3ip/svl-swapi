@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+require('dotenv').config();
 
 const actualizarUsuario = async (event) => {
     try {
@@ -7,7 +8,7 @@ const actualizarUsuario = async (event) => {
         const { nombre, apellidos } = JSON.parse(event.body);
 
         await dynamodb.update({
-            TableName: 'usersTable',
+            TableName: process.env.TABLENAME,
             Key: { id },
             UpdateExpression: 'SET nombre = :nombre, apellidos = :apellidos',
             ExpressionAttributeValues: {

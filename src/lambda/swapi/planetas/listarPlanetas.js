@@ -1,10 +1,9 @@
 const axios = require('axios');
-
-const baseURL = 'https://swapi.py4e.com/api'
+require('dotenv').config();
 
 const listarPlanetas = async () => {
     try {
-        const respuesta = await axios.get(`${baseURL}/planets`);
+        const respuesta = await axios.get(`${process.env.SWAPI_BASE_URL}/planets`);
         const { data } = respuesta;
         return data;
     } catch (error) {

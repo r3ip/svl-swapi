@@ -1,10 +1,11 @@
 const AWS = require('aws-sdk');
+require('dotenv').config();
 
 const listarUsuarios = async (event) => {
     try {
         const dynamodb = new AWS.DynamoDB.DocumentClient()
         const respuesta = await dynamodb.scan({
-            TableName: 'usersTable',
+            TableName: process.env.TABLENAME,
         }).promise();
     
         return {

@@ -1,4 +1,5 @@
 const AWS = require('aws-sdk');
+require('dotenv').config();
 
 const obtenerUsuario = async (event) => {
     try {
@@ -6,7 +7,7 @@ const obtenerUsuario = async (event) => {
         const { id } = event.pathParameters;
 
         const respuesta = await dynamodb.get({
-            TableName: 'usersTable',
+            TableName: process.env.TABLENAME,
             Key: { id }
         }).promise();
 

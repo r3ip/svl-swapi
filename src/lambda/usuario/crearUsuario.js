@@ -1,5 +1,6 @@
 const { v4 } = require('uuid');
 const AWS = require('aws-sdk');
+require('dotenv').config();
 
 const crearUsuario = async (event) => {
     try {
@@ -14,7 +15,7 @@ const crearUsuario = async (event) => {
         }
     
         await dynamodb.put({
-            TableName: 'usersTable',
+            TableName: process.env.TABLENAME,
             Item: usuario
         }).promise();
     
